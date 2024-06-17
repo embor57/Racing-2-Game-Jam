@@ -1759,10 +1759,10 @@ TextureImporter:
       name: CP_V1.0.4_79
       rect:
         serializedVersion: 2
-        x: 336
-        y: 368
-        width: 16
-        height: 16
+        x: 337
+        y: 369
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2809,10 +2809,10 @@ TextureImporter:
       name: CP_V1.0.4_129
       rect:
         serializedVersion: 2
-        x: 80
-        y: 192
-        width: 16
-        height: 16
+        x: 81
+        y: 193
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
