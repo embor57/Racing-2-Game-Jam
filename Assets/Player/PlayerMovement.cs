@@ -5,38 +5,45 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody2D myRigidBody;
-    public float Boost;
-    public float right;
-    public float left;
-    public float up;
-    public float down;
+    public float movespeed = .05f;
+    public bool flipUp = false;
+    public bool flipSide = false;
+    public SpriteRenderer spriteRenderer;
+
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            this.transform.position += Vector3.up * Boost;
+            this.transform.position += Vector3.up * movespeed;
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            this.transform.position += Vector3.right * right;
+            this.transform.position += Vector3.right * movespeed;
+            myRigidBody.rotation = -90;
         }
 
         if (Input.GetKey(KeyCode.W))
         {
-            this.transform.position += Vector3.up * up;
+            this.transform.position += Vector3.up * movespeed;
+            myRigidBody.rotation = 0;
+
         }
 
         if (Input.GetKey(KeyCode.A))
         {
-            this.transform.position += Vector3.left * left;
+            this.transform.position += Vector3.left * movespeed;
+            myRigidBody.rotation = 90;
         }
 
         if (Input.GetKey(KeyCode.S))
         {
-            this.transform.position += Vector3.down * down;
+            this.transform.position += Vector3.down * movespeed;
+            myRigidBody.rotation = 180;
+
+
         }
     }
 }
