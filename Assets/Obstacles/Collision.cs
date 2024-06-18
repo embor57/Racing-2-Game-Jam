@@ -6,9 +6,19 @@ public class Collision : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.transform.tag == "Enemy")
+        if (collision.gameObject.name == "Curb")
         {
-            Debug.Log("Game Over");
+            Debug.Log("enter");
+        }
+
+        if (collision.gameObject.name == "Curb")
+        {
+            Debug.Log("stay");
+        }
+
+        if (collision.gameObject.name == "Curb")
+        {
+            Debug.Log("exit");
         }
     }
 }
