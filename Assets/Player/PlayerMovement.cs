@@ -16,31 +16,31 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            this.transform.position += Vector3.up * movespeed;
+            this.transform.position += Vector3.up * movespeed * Time.deltaTime;
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            this.transform.position += Vector3.right * movespeed;
+            this.transform.position += Vector3.right * movespeed * Time.deltaTime;
             myRigidBody.rotation = -90;
         }
 
         if (Input.GetKey(KeyCode.W))
         {
-            this.transform.position += Vector3.up * movespeed;
+            this.transform.position += Vector3.up * movespeed * Time.deltaTime;
             myRigidBody.rotation = 0;
 
         }
 
         if (Input.GetKey(KeyCode.A))
         {
-            this.transform.position += Vector3.left * movespeed;
+            this.transform.position += Vector3.left * movespeed * Time.deltaTime;
             myRigidBody.rotation = 90;
         }
 
         if (Input.GetKey(KeyCode.S))
         {
-            this.transform.position += Vector3.down * movespeed;
+            this.transform.position += Vector3.down * movespeed * Time.deltaTime;
             myRigidBody.rotation = 180;
 
 
