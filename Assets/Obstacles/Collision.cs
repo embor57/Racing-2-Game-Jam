@@ -20,5 +20,14 @@ public class Collision : MonoBehaviour
         {
             Debug.Log("exit");
         }
+
+        if (collision.gameObject.name == "hole")
+        {
+
+        }
+        if (collision.gameObject.name == "banana")
+        {
+
+        }
     }
 }

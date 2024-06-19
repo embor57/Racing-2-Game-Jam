@@ -19,26 +19,26 @@ public class PlayerMovement : MonoBehaviour
             this.transform.position += Vector3.up * movespeed * Time.deltaTime;
         }
 
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             this.transform.position += Vector3.right * movespeed * Time.deltaTime;
             myRigidBody.rotation = -90;
         }
 
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
             this.transform.position += Vector3.up * movespeed * Time.deltaTime;
             myRigidBody.rotation = 0;
 
         }
 
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             this.transform.position += Vector3.left * movespeed * Time.deltaTime;
             myRigidBody.rotation = 90;
         }
 
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
             this.transform.position += Vector3.down * movespeed * Time.deltaTime;
             myRigidBody.rotation = 180;
