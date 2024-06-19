@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Collision : MonoBehaviour
 {
+    public string nextScene;
+    public GameObject coll;
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.name == "Curb")
@@ -21,13 +24,11 @@ public class Collision : MonoBehaviour
             Debug.Log("exit");
         }
 
-        if (collision.gameObject.name == "hole")
+        if (collision.gameObject.tag == "Player")
         {
-
-        }
-        if (collision.gameObject.name == "banana")
-        {
-
+            Instantiate(coll);
+            SceneManager.LoadScene(nextScene);
+            Debug.Log("stay");
         }
     }
 }

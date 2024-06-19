@@ -99,6 +99,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 720e66c97bf9fb04c9d2027901164f63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextScene: MenuScene
+  coll: {fileID: 3834933567224268194, guid: 35805e121845a944dbfa74452786d0ff, type: 3}
 --- !u!50 &4145004140826729791
 Rigidbody2D:
   serializedVersion: 4
