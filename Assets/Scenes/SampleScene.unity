@@ -3271,6 +3271,8 @@ GameObject:
   m_Component:
   - component: {fileID: 259610792}
   - component: {fileID: 259610791}
+  - component: {fileID: 259610794}
+  - component: {fileID: 259610793}
   m_Layer: 0
   m_Name: CP_V1.0.4_142
   m_TagString: Untagged
@@ -3345,6 +3347,61 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &259610793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259610790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 720e66c97bf9fb04c9d2027901164f63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextScene: MenuScene
+  coll: {fileID: 311677887}
+--- !u!68 &259610794
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259610790}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -4.992056, y: 0}
+  - {x: 4.992056, y: 0}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1001 &259680954
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8171,6 +8228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextScene: 
+  coll: {fileID: 0}
 --- !u!1001 &591248127
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16833,8 +16891,8 @@ Transform:
   m_GameObject: {fileID: 1248954594}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.7511, y: 18.310162, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -8.76, y: 18.3, z: 0}
+  m_LocalScale: {x: 1, y: 1.2417, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -27225,11 +27283,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1428844048681803487, guid: 1d9e3e3a4902d7d4a8e8ea01ee31bf8b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.48
+      value: -7.15
       objectReference: {fileID: 0}
     - target: {fileID: 1428844048681803487, guid: 1d9e3e3a4902d7d4a8e8ea01ee31bf8b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.3
+      value: 13.79
       objectReference: {fileID: 0}
     - target: {fileID: 1428844048681803487, guid: 1d9e3e3a4902d7d4a8e8ea01ee31bf8b, type: 3}
       propertyPath: m_LocalPosition.z
